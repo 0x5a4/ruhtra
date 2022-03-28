@@ -47,7 +47,7 @@ SRC_URI="https://www.github.com/InvalidName662/tutel/archive/refs/tags/v0.2.3.ta
 RESTRICT="mirror"
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
-LICENSE="Apache-2.0 Apache-2.0 WITH LLVM-exception MIT"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
