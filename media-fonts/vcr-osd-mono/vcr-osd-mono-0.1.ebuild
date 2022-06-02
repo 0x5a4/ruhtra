@@ -18,4 +18,3 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 FONT_SUFFIX="ttf"
-
