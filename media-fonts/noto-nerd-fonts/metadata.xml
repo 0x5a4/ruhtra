@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>arthur@wienstroer.net</email>
+	</maintainer>
+	<longdescription lang="en">
+		Google's font family that aims to support all the world's languages patched with NerdFont Glyphs
+	</longdescription>
+</pkgmetadata>
