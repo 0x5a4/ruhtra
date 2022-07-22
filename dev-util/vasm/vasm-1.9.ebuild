@@ -51,5 +51,5 @@ src_compile() {
 src_install() {
 	# This is not ideal
 	dobin vasm*_*
-	use doc && dodoc $DISTDIR/vasm.pdf
+	use doc && dodoc "$DISTDIR"/vasm.pdf
 }

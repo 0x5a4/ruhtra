@@ -246,7 +246,18 @@ DESCRIPTION="A Standalone widget system written in Rust"
 HOMEPAGE="https://github.com/elkowar/eww"
 SRC_URI="https://github.com/elkowar/eww/archive/refs/tags/v0.2.0.tar.gz $(cargo_crate_uris)"
 
-LICENSE="MIT"
+LICENSE="
+	|| ( Apache-2.0 Apache-2.0-with-LLVM-exceptions MIT )
+	|| ( Apache-2.0 BSL-1.0 )
+	|| ( Apache-2.0 MIT )
+	|| ( Artistic-2 CC0-1.0 )
+	|| ( MIT Unlicense )
+	Apache-2.0
+	BSD
+	CC0-1.0
+	ISC
+	MIT
+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="+X wayland"

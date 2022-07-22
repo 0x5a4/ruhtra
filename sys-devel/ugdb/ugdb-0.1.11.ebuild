@@ -3,7 +3,6 @@
 
 EAPI=8
 
-
 CRATES="
 	addr2line-0.17.0
 	adler-1.0.2
@@ -125,12 +124,12 @@ SRC_URI="https://github.com/ftilde/ugdb/archive/$PV.tar.gz $(cargo_crate_uris)"
 RESTRICT="mirror"
 
 LICENSE="
-	|| ( OBSD Apache-2.0 MIT )
-	|| ( Apache-2.0 Apache-2.0-with-llvm-exceptions MIT )
+	|| ( ISC Apache-2.0 MIT )
+	|| ( Apache-2.0 Apache-2.0-with-LLVM-exceptions MIT )
 	|| ( Apache-2.0 BSL-1.0 )
 	|| ( Apache-2.0 BSL-1.0 CC0-1.0 MIT )
 	|| ( Apache-2.0 MIT )
-	|| ( Apache-2.0 MIT Zlib )
+	|| ( Apache-2.0 MIT ZLIB )
 	MIT
 	ISC
 	MPL-2.0

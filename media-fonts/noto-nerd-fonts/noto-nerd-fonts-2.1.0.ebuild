@@ -5,7 +5,7 @@ EAPI=8
 inherit font
 
 DESCRIPTION="Google's font family patched with Nerd Font Glyphs"
-HOMEPAGE="www.nerdfonts.com"
+HOMEPAGE="https://www.nerdfonts.com/"
 SRC_URI="https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Noto.zip -> NotoNerdFonts.zip"
 S="${WORKDIR}"
 

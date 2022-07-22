@@ -40,17 +40,19 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="a minimalist todo app for terminal enthusiasts"
-# Double check the homepage as the cargo_metadata crate
-# does not provide this value so instead repository is used
 HOMEPAGE="https://www.github.com/InvalidName662/tutel"
 SRC_URI="https://www.github.com/InvalidName662/tutel/archive/refs/tags/v0.2.3.tar.gz $(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
-# License set may be more restrictive as OR is not respected
-# use cargo-license for a more accurate license picture
-LICENSE="MIT"
+
+LICENSE="
+	|| ( Apache-2.0-with-LLVM-exceptions MIT )
+	|| ( Apache-2.0 MIT )
+	MIT
+"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND=""
 RDEPEND=""
+BDEPEND="virtual/rust"
