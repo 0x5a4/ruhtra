@@ -126,8 +126,8 @@ RESTRICT="mirror"
 LICENSE="
 	|| ( ISC Apache-2.0 MIT )
 	|| ( Apache-2.0 Apache-2.0-with-LLVM-exceptions MIT )
-	|| ( Apache-2.0 BSL-1.0 )
-	|| ( Apache-2.0 BSL-1.0 CC0-1.0 MIT )
+	|| ( Apache-2.0 Boost-1.0 )
+	|| ( Apache-2.0 Boost-1.0 CC0-1.0 MIT )
 	|| ( Apache-2.0 MIT )
 	|| ( Apache-2.0 MIT ZLIB )
 	MIT
