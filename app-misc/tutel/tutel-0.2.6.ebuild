@@ -56,5 +56,4 @@ src_install() {
 
 	insinto /usr/share/fish/vendor_completions.d
 	newins res/tutel-completions.fish ${PN}.fish
-
 }
