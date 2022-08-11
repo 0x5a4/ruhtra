@@ -28,7 +28,7 @@ inherit bash-completion-r1 cargo
 
 DESCRIPTION="a minimalistic todo app for terminal enthusiasts"
 HOMEPAGE="https://www.github.com/InvalidName662/tutel"
-SRC_URI="https://www.github.com/InvalidName662/tutel/archive/refs/tags/v${PV}.tar.gz $(cargo_crate_uris ${CRATES})"
+SRC_URI="https://www.github.com/InvalidName662/tutel/archive/refs/tags/v${PV}.tar.gz -> tutel-${PV}.tar.gz $(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="
 	|| ( Apache-2.0 MIT )
