@@ -6,7 +6,7 @@ CRATES="
 	anyhow-1.0.45
 	atty-0.2.14
 	bitflags-1.3.2
-	bpaf-0.4.9
+	bpaf-0.5.0
 	cfg-if-1.0.0
 	colored-2.0.0
 	fastrand-1.8.0
