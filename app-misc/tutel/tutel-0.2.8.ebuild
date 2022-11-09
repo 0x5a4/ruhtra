@@ -3,22 +3,19 @@
 EAPI=8
 
 CRATES="
-	anyhow-1.0.45
-	atty-0.2.14
+	anyhow-1.0.62
 	bitflags-1.3.2
-	bpaf-0.5.0
+	bpaf-0.7.2
 	cfg-if-1.0.0
-	colored-2.0.0
 	fastrand-1.8.0
-	hermit-abi-0.1.19
 	instant-0.1.12
-	lazy_static-1.4.0
-	libc-0.2.112
-	redox_syscall-0.2.10
+	libc-0.2.132
+	owo-colors-3.5.0
+	redox_syscall-0.2.16
 	remove_dir_all-0.5.3
-	serde-1.0.130
+	serde-1.0.144
 	tempfile-3.3.0
-	toml-0.5.8
+	toml-0.5.9
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-x86_64-pc-windows-gnu-0.4.0
@@ -47,13 +44,11 @@ BPEPEND="virtual/rust"
 src_install() {
 	cargo_src_install
 
-	einstalldocs
-
-	newbashcomp res/tutel-completions.bash ${PN}
+	newbashcomp "$FILESDIR/tutel-completions.bash" ${PN}
 
 	insinto /usr/share/zsh/site-functions
-	newins res/tutel-completions.zsh _${PN}
+	newins "$FILESDIR/tutel-completions.zsh" _${PN}
 
 	insinto /usr/share/fish/vendor_completions.d
-	newins res/tutel-completions.fish ${PN}.fish
+	newins "$FILESDIR/tutel-completions.fish" ${PN}.fish
 }
