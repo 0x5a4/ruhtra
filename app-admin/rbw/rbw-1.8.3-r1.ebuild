@@ -275,7 +275,7 @@ CRATES="
 	zeroize-1.6.0
 "
 
-inherit cargo
+inherit shell-completion cargo
 
 DESCRIPTION="Unofficial Bitwarden CLI"
 HOMEPAGE="https://git.tozt.net/rbw"
@@ -304,5 +304,5 @@ src_install() {
 	dofishcomp rbw.fish
 
 	./target/release/rbw gen-completions zsh > _rbw|| die
-	dozsh_comp _rbw
+	dozshcomp _rbw
 }
