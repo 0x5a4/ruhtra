@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A portable and retargetable assembler
+EAPI=8
+HOMEPAGE=http://www.compilers.de/vasm.html
+IUSE=target-6502 target-6800 target-6809 target-arm target-c16x target-jagrisc target-m68k target-pdp11 target-ppc target-qnice target-tr3200 target-vidcore target-x86 target-z80 syntax-std syntax-madmac syntax-mot syntax-oldstyle -doc
+KEYWORDS=~amd64 ~x86
+LICENSE=VASM
+REQUIRED_USE=|| ( target-6502 target-6800 target-6809 target-arm target-c16x target-jagrisc target-m68k target-pdp11 target-ppc target-qnice target-tr3200 target-vidcore target-x86 target-z80 ) || ( syntax-std syntax-madmac syntax-mot syntax-oldstyle )
+SLOT=0
+SRC_URI=http://phoenix.owl.de/tags/vasm1_9.tar.gz -> vasm-1.9.tar.gz doc? ( http://sun.hasenbraten.de/vasm/release/vasm.pdf )
+_md5_=6ac4ab6a8bcd1655ea2874032c52e462
