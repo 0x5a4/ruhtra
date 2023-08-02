@@ -1,4 +1,4 @@
-# Copyright 2017-2022 Gentoo Authors
+# Copyright 2017-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 EAPI=8
 
@@ -21,7 +21,7 @@ CRATES="
 	winapi-x86_64-pc-windows-gnu-0.4.0
 "
 
-inherit bash-completion-r1 cargo
+inherit shell-completion cargo
 
 DESCRIPTION="a minimalistic todo app for terminal enthusiasts"
 HOMEPAGE="https://www.github.com/InvalidName662/tutel"
@@ -44,11 +44,9 @@ BPEPEND="virtual/rust"
 src_install() {
 	cargo_src_install
 
-	newbashcomp "$FILESDIR/tutel-completions.bash" ${PN}
+	dobashcomp "$FILESDIR/tutel-completions.bash"
 
-	insinto /usr/share/zsh/site-functions
-	newins "$FILESDIR/tutel-completions.zsh" _${PN}
+	dofishcomp "$FILESDIR/tutel-completions.fish"
 
-	insinto /usr/share/fish/vendor_completions.d
-	newins "$FILESDIR/tutel-completions.fish" ${PN}.fish
+	dozshcomp "$FILESDIR/tutel-completions.zsh"
 }
